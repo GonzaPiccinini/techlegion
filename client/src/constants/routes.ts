@@ -6,6 +6,7 @@ export const ROUTES = {
         DEFAULT: '/',
         HOME: '/inicio',
         LOGIN: '/iniciar-sesion',
+        REGISTER: '/crear-una-cuenta',
         SHOP: '/tienda',
     }
 }

@@ -1,0 +1,34 @@
+.Nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid  var(--gray);
+}
+
+.NavUl {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.NavUl:first-child {
+    position: relative;
+    left: -20px;
+}
+
+.NavUl:last-child {
+    position: relative;
+    right: 20px;
+}
+
+.NavLi {
+}
+
+.NavLiImg {
+    cursor: pointer;
+}

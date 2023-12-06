@@ -1,5 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import { Dashboard, Home, Login, Shop } from "./pages"
+import { Dashboard, Home, Login, Register, Shop } from "./pages"
 import { ROUTES } from "./constants"
 import { AppContainer, Layout } from './containers'
 import { Provider } from 'react-redux'
@@ -20,6 +20,7 @@ function App() {
                 <Route path={ROUTES.PUBLIC_ROUTES.DEFAULT} element={<Navigate to={ROUTES.PRIVATE_ROUTES.DASHBOARD} replace />} />
                 <Route path={ROUTES.PUBLIC_ROUTES.HOME} element={<Home />} />
                 <Route path={ROUTES.PUBLIC_ROUTES.LOGIN} element={<Login />} />
+                <Route path={ROUTES.PUBLIC_ROUTES.REGISTER} element={<Register />} />
                 <Route path={ROUTES.PUBLIC_ROUTES.SHOP} element={<Shop />} />
                 <Route element={<AuthGuard />}>
                   <Route path={ROUTES.PRIVATE_ROUTES.DASHBOARD} element={<Dashboard />} />

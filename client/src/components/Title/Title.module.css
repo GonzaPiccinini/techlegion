@@ -1,0 +1,39 @@
+.Title {
+    
+}
+
+
+/* FONT WEIGHT */
+.TitleBlackWeight{
+    font-weight: 800;
+}
+.TitleBoldWeight{
+    font-weight: 600;
+}
+.TitleLightWeight{
+    font-weight: 200;
+}
+.TitleMediumWeight{
+    font-weight: 500;
+}
+.TitleRegularWeight{
+    font-weight: 400;
+}
+
+/* COLOR */
+.TitleBlackColor {
+    color: var(--black);
+}
+.TitleBlueColor {
+    font-weight: ;
+    color: var(--blue);
+}
+.TitleRedColor {
+    color: var(--red);
+}
+.TitleGrayColor {
+    color: var(--gray);
+}
+.TitleWhiteColor {
+    color: var(--white);
+}

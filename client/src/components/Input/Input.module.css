@@ -1,0 +1,95 @@
+.InputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Input {
+    box-shadow: none !important;
+    outline: none;
+    padding: 14px 10px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.InputDiv {
+    position: relative;
+}
+
+.InputLabel {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    padding: 2px;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+.InputLabel:after {
+    content: " ";
+    background-color: var(--black);
+    width: 100%;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.Input:focus {
+    border-color: var(--white);
+}
+
+
+
+
+/* SIZE */
+.InputLargeSize {
+    width: 400px;
+}
+
+.InputMediumSize {
+    width: 300px;
+    
+}
+
+.InputSmallSize {
+    width: 200px;
+}
+
+
+
+/* COLOR */
+.InputBlackColor {
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+.InputLabelBlackColor {
+    color: var(--black);
+}
+
+.InputYellowColor {
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+}
+.InputLabelYellowColor {
+    color: var(--yellow);
+}
+
+.InputWhiteColor {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.InputLabelWhiteColor {
+    color: var(--white);
+}
+
+
+
+/* ERROR MESSAGE */
+.InputErrorMessage {
+    color: #FF6666;
+}
+

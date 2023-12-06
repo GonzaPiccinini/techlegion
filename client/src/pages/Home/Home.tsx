@@ -1,6 +1,10 @@
+import styles from './Home.module.css'
+
 const Home = () => {
     return (
-        <h1>Home Page</h1>
+        <div className={styles.HomeContainer}>
+            <h1>Tech Legion</h1>
+        </div>
     )
 }
 

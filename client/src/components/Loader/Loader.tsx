@@ -7,7 +7,7 @@ const Loader = () => {
             justifyContent: 'center',
             alignItems: 'center'
         }}>
-            <h3>Loading...</h3>
+            <p style={{ color: '#FFD369' }}>Loading...</p>
         </div>
     )
 }

@@ -1,4 +1,5 @@
-import { Navbar } from "../../components/Navbar"
+import styles from './Layout.module.css'
+import { Navbar } from "../../components"
 
 interface ILayoutProps {
     children: React.ReactNode | JSX.Element
@@ -6,10 +7,10 @@ interface ILayoutProps {
 
 const Layout = ({ children }: ILayoutProps) => {
     return (
-        <>
+        <div className={styles.Layout}>
             <Navbar />
             {children}
-        </>
+        </div>
     )
 }
 

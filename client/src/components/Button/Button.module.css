@@ -1,0 +1,89 @@
+.Button {
+    min-width: max-content;
+    outline: none;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 13px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+
+
+/* DISPLAY */
+.ButtonRowDisplay {
+}
+.ButtonRowReverseDisplay {
+    flex-direction: row-reverse;
+}
+.ButtonColumnDisplay {
+    flex-direction: column;
+    padding: 8px 13px;
+}
+.ButtonColumnReverseDisplay {
+    flex-direction: column-reverse;
+    padding: 8px 13px;
+}
+
+/* SIZE */
+.ButtonSmallSize {
+    width: 90px;
+}
+.ButtonMediumSize {
+    width: 120px;
+}
+.ButtonLargeSize {
+    width: 150px;
+}
+.ButtonAdjustableSize {
+}
+
+
+/* TEXT COLOR */
+.ButtonBlackTextColor {
+    color: var(--black);
+}
+.ButtonYellowTextColor {
+    color: var(--yellow);
+}
+.ButtonGrayTextColor {
+    color: var(--gray);
+}
+.ButtonWhiteTextColor {
+    color: var(--white);
+}
+
+
+/* BACKGROUND COLOR */
+.ButtonBlackBackgroundColor {
+    background-color: var(--black);
+}
+.ButtonYellowBackgroundColor {
+    background-color: var(--yellow);
+}
+.ButtonGrayBackgroundColor {
+    background-color: var(--gray);
+}
+.ButtonWhiteBackgroundColor {
+    background-color: var(--white);
+}
+
+
+/* BORDER COLOR */
+.ButtonBlackBorderColor {
+    border: 2px solid var(--black);
+}
+.ButtonYellowBorderColor {
+    border: 2px solid var(--yellow);
+}
+.ButtonGrayBorderColor {
+    border: 2px solid var(--gray);
+}
+.ButtonWhiteBorderColor {
+    border: 2px solid var(--white);
+}
