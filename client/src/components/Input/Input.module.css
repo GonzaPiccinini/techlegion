@@ -12,32 +12,6 @@
     border-radius: 5px;
 }
 
-.InputDiv {
-    position: relative;
-}
-
-.InputLabel {
-    position: absolute;
-    top: -8px;
-    left: 10px;
-    padding: 2px;
-    z-index: 1;
-    font-size: 14px;
-    font-weight: 400;
-    display: inline-block;
-    margin-bottom: .5rem;
-}
-.InputLabel:after {
-    content: " ";
-    background-color: var(--black);
-    width: 100%;
-    height: 13px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
 .Input:focus {
     border-color: var(--white);
 }
@@ -70,12 +44,20 @@
     color: var(--black);
 }
 
-.InputYellowColor {
-    border: 1px solid var(--yellow);
-    color: var(--yellow);
+.InputBlueColor {
+    border: 1px solid var(--blue);
+    color: var(--blue);
 }
-.InputLabelYellowColor {
-    color: var(--yellow);
+.InputLabelBlueColor {
+    color: var(--blue);
+}
+
+.InputGrayColor {
+    border: 1px solid var(--gray);
+    color: var(--gray);
+}
+.InputLabelGrayColor {
+    color: var(--gray);
 }
 
 .InputWhiteColor {

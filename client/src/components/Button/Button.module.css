@@ -48,8 +48,8 @@
 .ButtonBlackTextColor {
     color: var(--black);
 }
-.ButtonYellowTextColor {
-    color: var(--yellow);
+.ButtonBlueTextColor {
+    color: var(--blue);
 }
 .ButtonGrayTextColor {
     color: var(--gray);
@@ -63,8 +63,8 @@
 .ButtonBlackBackgroundColor {
     background-color: var(--black);
 }
-.ButtonYellowBackgroundColor {
-    background-color: var(--yellow);
+.ButtonBlueBackgroundColor {
+    background-color: var(--blue);
 }
 .ButtonGrayBackgroundColor {
     background-color: var(--gray);
@@ -78,8 +78,8 @@
 .ButtonBlackBorderColor {
     border: 2px solid var(--black);
 }
-.ButtonYellowBorderColor {
-    border: 2px solid var(--yellow);
+.ButtonBlueBorderColor {
+    border: 2px solid var(--blue);
 }
 .ButtonGrayBorderColor {
     border: 2px solid var(--gray);

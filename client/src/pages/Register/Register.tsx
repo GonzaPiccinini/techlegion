@@ -16,7 +16,7 @@ const Register = () => {
 
     return loading ? <Loader />
         : <main className={styles.RegisterContainer}>
-            <Title element='h1' weight='regular'>Crear una cuenta</Title>
+            <Title element='h1' color='blue' weight='regular'>Crear una cuenta</Title>
             <Formik
                 initialValues={{ ...EMPTY_REGISTER, confirmPassword: '' }}
                 onSubmit={() => { }}
@@ -26,49 +26,54 @@ const Register = () => {
                     onSubmit={handleSubmit}>
                     <Input
                         ref={firstName}
-                        label="Nombre"
+                        placeholder='Nombre'
                         name="firstName"
                         type="text"
                         size="large"
+                        color='blue'
                         error
                     />
                     <Input
                         ref={lastName}
-                        label="Apellido"
+                        placeholder='Apellido'
                         name="lastName"
                         type="text"
                         size="large"
+                        color='blue'
                         error
                     />
                     <Input
                         ref={email}
-                        label="Correo"
+                        placeholder='Correo'
                         name="email"
                         type="email"
                         size="large"
+                        color='blue'
                         error
                     />
                     <Input
                         ref={password}
-                        label="Contraseña"
+                        placeholder="Contraseña"
                         name="password"
                         type="password"
                         size="large"
+                        color='blue'
                         error
                     />
                     <Input
-                        label="Repetir contraseña"
+                        placeholder="Repetir contraseña"
                         name="confirmPassword"
                         type="password"
                         size="large"
+                        color='blue'
                         error
                     />
                     <Button
                         icon={<TbArrowRight />}
                         display="rowReverse"
                         textColor="black"
-                        backgroundColor="yellow"
-                        borderColor="yellow"
+                        backgroundColor="blue"
+                        borderColor="blue"
                     >
                         Crear cuenta
                     </Button>

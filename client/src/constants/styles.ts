@@ -1,7 +1,7 @@
-export type Color = 'black' | 'yellow' | 'gray' | 'white'
+export type Color = 'black' | 'blue' | 'gray' | 'white'
 export const COLORS: Record<Color, Color> = {
     black: 'black',
-    yellow: 'yellow',
+    blue: 'blue',
     gray: 'gray',
     white: 'white'
 }

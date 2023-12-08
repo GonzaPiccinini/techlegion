@@ -19,67 +19,69 @@ const Login = () => {
 
     return loading ? <Loader />
         : <main className={styles.LoginContainer}>
-            <section className={styles.LoginSection}>
-                <Title
-                    color='white'
-                    weight='regular'
-                    element='h1'>
-                    ¿No tienes cuenta? Unete a nosotros!
-                </Title>
-                <Button
-                    size='large'
-                    textColor='white'
-                    backgroundColor='black'
-                    borderColor='white'
-                    onClick={() => navigate(ROUTES.PUBLIC_ROUTES.REGISTER)}
-                >
-                    Crear o registrar una cuenta
-                </Button>
-            </section>
-            <section className={styles.LoginSection}>
-                <Title
-                    color='white'
-                    weight='regular'
-                    element='h1'>
-                    Iniciar sesion
-                </Title>
-                <Formik
-                    initialValues={EMPTY_LOGIN}
-                    onSubmit={() => { }}
-                    validationSchema={LOGIN_SCHEMA}
-                >
-                    <Form
-                        className={styles.LoginForm}
-                        onSubmit={handleSubmit}>
-                        <Input
-                            name="email"
-                            label="Correo"
-                            type="email"
-                            color='white'
-                            size="small"
-                            ref={email}
-                            error />
-                        <Input
-                            name="password"
-                            label="Contraseña"
-                            type="password"
-                            color='white'
-                            ref={password}
-                            size="small"
-                            error />
-                        <Button
-                            icon={<TbLogin2 size={18} />}
-                            type="submit"
-                            size='large'
-                            textColor='black'
-                            backgroundColor='white'
-                            borderColor='white'
-                        >
-                            Iniciar sesion
-                        </Button>
-                    </Form>
-                </Formik>
-            </section>
+            <Title
+                color='blue'
+                weight='regular'
+                element='h1'>
+                Iniciar sesion
+            </Title>
+            <div className={styles.LoginSectionContainer}>
+                <section className={styles.LoginSection}>
+                    <Formik
+                        initialValues={EMPTY_LOGIN}
+                        onSubmit={() => { }}
+                        validationSchema={LOGIN_SCHEMA}
+                    >
+                        <Form
+                            className={styles.LoginForm}
+                            onSubmit={handleSubmit}>
+                            <Input
+                                name="email"
+                                placeholder="Correo"
+                                type="email"
+                                color='blue'
+                                size="small"
+                                ref={email}
+                                error />
+                            <Input
+                                name="password"
+                                placeholder="Contraseña"
+                                type="password"
+                                color='blue'
+                                ref={password}
+                                size="small"
+                                error />
+                            <Button
+                                icon={<TbLogin2 size={18} />}
+                                type="submit"
+                                size='large'
+                                textColor='white'
+                                backgroundColor='blue'
+                                borderColor='blue'
+                            >
+                                Iniciar sesion
+                            </Button>
+                        </Form>
+                    </Formik>
+                </section>
+                <section className={styles.LoginSection}>
+                    <Title
+                        color='blue'
+                        weight='regular'
+                        element='h2'>
+                        ¿No tienes cuenta? Unete a nosotros!
+                    </Title>
+                    <Button
+                        size='large'
+                        textColor='blue'
+                        backgroundColor='black'
+                        borderColor='blue'
+                        onClick={() => navigate(ROUTES.PUBLIC_ROUTES.REGISTER)}
+                    >
+                        Crear o registrar una cuenta
+                    </Button>
+                </section>
+            </div>
         </main>
 }
 

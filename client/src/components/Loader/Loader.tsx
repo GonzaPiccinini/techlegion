@@ -1,13 +1,9 @@
+import styles from './Loader.module.css'
+
 const Loader = () => {
     return (
-        <div style={{
-            width: '100vw',
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
-        }}>
-            <p style={{ color: '#FFD369' }}>Loading...</p>
+        <div className={styles.LoaderContainer}>
+            <span className={styles.Loader} />
         </div>
     )
 }

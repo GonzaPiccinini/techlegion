@@ -11,7 +11,7 @@ mapSize.set(SIZES.small, styles.InputSmallSize)
 
 const mapColor: Map<string, { input: string, label: string }> = new Map()
 mapColor.set(COLORS.white, { input: styles.InputBlackColor, label: styles.InputLabelBlackColor })
-mapColor.set(COLORS.yellow, { input: styles.InputYellowColor, label: styles.InputLabelYellowColor })
+mapColor.set(COLORS.blue, { input: styles.InputBlueColor, label: styles.InputLabelBlueColor })
 mapColor.set(COLORS.gray, { input: styles.InputGrayColor, label: styles.InputLabelGrayColor })
 mapColor.set(COLORS.white, { input: styles.InputWhiteColor, label: styles.InputLabelWhiteColor })
 
@@ -19,7 +19,7 @@ interface InputProps {
     color?: Color
     size?: Size
     error: boolean
-    label: string
+    label?: string
     name: string
     placeholder?: string
     type?: 'text' | 'email' | 'password'
@@ -40,25 +40,23 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(function Input(
 
     return (
         <div className={styles.InputContainer}>
-            <div className={styles.InputDiv}>
-                <label
-                    className={
-                        `${styles.InputLabel}
+            {label && <label
+                className={
+                    `${styles.InputLabel}
                         ${mapColor.get(color)?.label}`
-                    }>
-                    {label}
-                </label>
-                <input
-                    ref={ref}
-                    className={
-                        `${styles.Input} 
+                }>
+                {label}
+            </label>}
+            <input
+                ref={ref}
+                className={
+                    `${styles.Input} 
                         ${mapSize.get(size)}
                         ${mapColor.get(color)?.input}`
-                    }
-                    {...field}
-                    {...props}
-                />
-            </div>
+                }
+                {...field}
+                {...props}
+            />
             {error && <ErrorMessage className={styles.InputErrorMessage} name={props.name} component="span" />}
         </div>
     )

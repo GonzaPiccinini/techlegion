@@ -22,7 +22,6 @@ interface TitleProps {
 const mapColor = new Map()
 mapColor.set(COLORS.black, styles.TitleBlackColor)
 mapColor.set(COLORS.blue, styles.TitleBlueColor)
-mapColor.set(COLORS.red, styles.TitleRedColor)
 mapColor.set(COLORS.gray, styles.TitleGrayColor)
 mapColor.set(COLORS.white, styles.TitleWhiteColor)
 

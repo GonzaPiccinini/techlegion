@@ -28,9 +28,6 @@
     font-weight: ;
     color: var(--blue);
 }
-.TitleRedColor {
-    color: var(--red);
-}
 .TitleGrayColor {
     color: var(--gray);
 }

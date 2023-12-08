@@ -13,10 +13,10 @@ mapColor.set(COLORS.black, {
     backgroundColor: styles.ButtonBlackBackgroundColor,
     borderColor: styles.ButtonBlackBorderColor
 })
-mapColor.set(COLORS.yellow, {
-    textColor: styles.ButtonYellowTextColor,
-    backgroundColor: styles.ButtonYellowBackgroundColor,
-    borderColor: styles.ButtonYellowBorderColor
+mapColor.set(COLORS.blue, {
+    textColor: styles.ButtonBlueTextColor,
+    backgroundColor: styles.ButtonBlueBackgroundColor,
+    borderColor: styles.ButtonBlueBorderColor
 })
 mapColor.set(COLORS.gray, {
     textColor: styles.ButtonGrayTextColor,
@@ -59,22 +59,21 @@ const Button = ({
     backgroundColor = 'white',
     borderColor = 'white',
     ...props
-}: ButtonProps) => {
-    return (
-        <button
-            className={
-                `${styles.Button}
+}: ButtonProps) => (
+    <button
+        className={`
+                ${styles.Button}
                 ${mapSize.get(size)}
                 ${mapColor.get(textColor)?.textColor}
                 ${mapColor.get(backgroundColor)?.backgroundColor}
                 ${mapColor.get(borderColor)?.borderColor}
                 ${mapDisplay.get(display)}`
-            }
-            {...props}>
-            {icon && <>{icon}</>}
-            {children}
-        </button>
-    )
-}
+        }
+        {...props}
+    >
+        {icon && <>{icon}</>}
+        {children}
+    </button>
+)
 
 export default Button

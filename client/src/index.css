@@ -1,8 +1,8 @@
 :root {
-    --black: #222831; /* #252A34 */
-    --yellow: #FFD369;
-    --gray: #393E46; /* #4f5359 */
-    --white: #EAEAEA;
+    --black: #0A0A0A; /* 222831 252A34 000000 */
+    --blue: #068FFF; 
+    --gray: #1B1C1E; 
+    --white: #EEEEEE;
 }
 
 @font-face {
